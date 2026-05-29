@@ -1,6 +1,5 @@
 <!doctype html>
 <head>
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 <link rel="stylesheet" href="./leaflet/leaflet.css" />
 <!-- Site stylesheet -->
 <link rel="stylesheet" type="text/css" href="scripts/RainWorld-Map.css" />
@@ -72,7 +71,7 @@
 <script type='text/javascript' src="scripts/L.TileLayer.Zoomify.js"></script>
 <script type='text/javascript'>
     //Check if dependencies are available
-    if (typeof jQuery == 'undefined' || typeof L == 'undefined') {
+    if (typeof L == 'undefined') {
         document.getElementById('instruction').getElementsByTagName('p')[0].innerHTML = 'CDN error - externally hosted script(s) unavailable';
     }
     else {
