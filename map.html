@@ -72,7 +72,7 @@
 <script type='text/javascript' src="scripts/L.TileLayer.Zoomify.js"></script>
 <script type='text/javascript'>
     //Check if dependencies are available
-    if (typeof L == 'undefined') {
+    if (typeof JQuery == 'underfined' || typeof L == 'undefined') {
         document.getElementById('instruction').getElementsByTagName('p')[0].innerHTML = 'CDN error - externally hosted script(s) unavailable';
     }
     else {
